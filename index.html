@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Build a Simon Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <audio id="g_tone">
+  <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio>
+<audio id="r_tone"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio>
+  <audio id="b_tone"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio>
+  <audio id="y_tone"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio>
+<div class="container-fluid">
+<div id="center-div">
+   <div id="inner-circle"><h1 class="text-center" id="simon_name">Simon<sup><span style="font-size:50%">&reg;</span></sup></h1>
+     <div id="show_count"><p id="show_count_number">- -</p></div><p id="show_count_word">COUNT</p><button id="start_button" onclick="simons_game.start_game();"></button><p id="start_button_word">START</p><div id="strict_light"></div><button id="strict_button" onclick="simons_game.strict_button();"></button><p id="strict_word">STRICT</p><br>
+     <p id="off_word">OFF</p><div id="on_off_button"><button id="on_button" onclick="simons_game.on_button();"></button><button id="off_button" onclick="simons_game.off_button();"></button></div><p id="on_word">ON</p>
+     
+     
+   </div> 
+   <a href="#" id="lightgreen" onclick="simons_game.click_color(this.id, '#008000', 'g');"><div id="g"></div></a>
+  
+   <a href="#" id="#ff0000" onclick="simons_game.click_color(this.id, '#bf0000', 'r');"><div id="r">
+  </div></a><br>
+   <a href="#" id="#FFFF00" onclick="simons_game.click_color(this.id, '#cccc00', 'y');"><div id="y"></div></a>
+   <a href="#" id="#00fff3" onclick="simons_game.click_color(this.id, '#1000ff', 'b');"><div id="b"></div></a></div>
+ 
+  
+  
+  
+  
+  
+   
+  
+  
+  
+</div><!--container-fluid-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

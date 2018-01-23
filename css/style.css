@@ -1,0 +1,233 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, a
+    {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      border-top-width: 0px;
+      border-right-width-value: 0px;
+      border-bottom-width: 0px;
+      border-left-width-value: 0px;
+    } /* this resets the browsers so all are the same to begin with, as was having an issue with buttons in Mozilla and Chrome not looking the same. https://stackoverflow.com/questions/2954659/css-size-of-buttons-in-chrome-is-different-than-firefox*/
+#g,
+#r,
+#b,
+#y {
+  width: 200px;
+  height: 200px;
+  postion: absolute;
+}
+#g,
+#r {
+  border-top: 13px solid black;
+  border-bottom: 7.5px solid black;
+}
+#r,
+#b {
+  border-right: 13px solid black;
+  border-left: 7.5px solid black;
+}
+#g,
+#y {
+  border-left: 13px solid black;
+  border-right: 7.5px solid black;
+}
+#y,
+#b {
+  border-top: 7.5px solid black;
+  border-bottom: 13px solid black;
+}
+#g {
+  background-color: green;
+  border-top-left-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  left: -100px;
+  top: 50px;
+}
+#r {
+  background-color: #bf0000;
+  border-top-right-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+}
+#b {
+  background-color: #1000ff;
+  border-bottom-right-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+}
+#y {
+  background-color: #cccc00;
+  border-bottom-left-radius: 100%;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  left: -100px;
+  top: 250px;
+}
+#inner-circle {
+  background-color: white;
+  width: 220px;
+  height: 220px;
+  border: 10px solid black;
+  position: relative;
+  left: -10px;
+  top: 140px;
+  border-radius: 100%;
+}
+#center-div {
+  width:100%;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -110px;
+  z-index:-4;
+}
+
+#simon_name {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  font-family: impact, charcoal;
+  font-size: 400%;
+}
+#show_count {
+  display: inline-block;
+  font-weight: bold;
+  width: 55px;
+  height: 30px;
+  position: relative;
+  background-color: black;
+  left: 20px;
+  top: 100px;
+  color: red;
+  font-size: 140%;
+  text-align: center;
+  border-radius: 15%;
+  vertical-align: middle;
+  padding: 2%;
+}
+#show_count_word {
+  position: relative;
+  top: 103px;
+  left: 30px;
+  width: 55px;
+  background-color: white;
+  color: black;
+  z-index: 1;
+  bottom: -5px;
+  font-size: x-small;
+  font-weight: bold;
+}
+#start_button_word {
+  position: relative;
+  top: 88px;
+  left: 93px;
+  width: 55px;
+  font-size: x-small;
+  font-weight: bold;
+}
+#strict_button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: yellow;
+  left: 145px;
+  top: 103px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+#strict_light {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: black;
+  left: 154px;
+  top: 90px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#strict_word {
+  display: inline-block;
+  position: relative;
+  top: 73px;
+  left: 140px;
+  font-size: x-small;
+  font-weight: bold;
+}
+#off_word {
+  display: inline-block;
+  position: absolute;
+  top: 163px;
+  left: 50px;
+  font-weight: bold;
+}
+#on_off_button {
+  width: 38px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+  left: 80px;
+  top: 160px;
+}
+#on_button {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #1e90ff;
+  top: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20%;
+  left: 1px;
+  border: 1px solid;
+}
+#off_button {
+  display: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #1e90ff;
+  top: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  border-radius: 20%;
+  margin-right: 19px;
+  border: 1px solid;
+}
+#on_word {
+  width: 45px;
+  height: 20px;
+  position: absolute;
+  left: 130px;
+  top: 163px;
+  font-weight: bold;
+}
+#start_button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: red;
+  left: 95px;
+  top: 103px;
+  border-radius: 50%;
+  border: 3px solid;
+  padding: 13x;
+}
+#show_count_number {color:red;display:none;}
